@@ -1,0 +1,48 @@
+Started by user [8mha:////4N91J/9+wXSU0Nbtt15JJfGsjAJkwUyU1Npjqlp0kB1oAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4HXhNTbzbSchtTZ77+2alOMiPqbG3H94WG4EmscGlD6bAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZZ/eT83ILSktQi/YCi/JR4r9S87My84vjgnMSyVCMAUUaN2tIAAAA=[0mProd_Jenkins_Slave2 (Prod_Slaves) in workspace /opt/slave_Machine2/workspace/Freestyle/GitHub_Maven
+The recommended git tool is: NONE
+No credentials specified
+ > /usr/bin/git rev-parse --resolve-git-dir /opt/slave_Machine2/workspace/Freestyle/GitHub_Maven/.git # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/saikirangude/Git-repo2.git # timeout=10
+Fetching upstream changes from https://github.com/saikirangude/Git-repo2.git
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.32.0'
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/saikirangude/Git-repo2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 5beee671a8a7d3ce0c81d1d5aab75ab3a1be7f45 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 5beee671a8a7d3ce0c81d1d5aab75ab3a1be7f45 # timeout=10
+Commit message: "Update pom.xml"
+ > /usr/bin/git rev-list --no-walk 5beee671a8a7d3ce0c81d1d5aab75ab3a1be7f45 # timeout=10
+[GitHub_Maven] $ /bin/sh -xe /tmp/jenkins862536105603866223.sh
++ mvn clean compile
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building trucks Maven Webapp 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ dumpers ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ dumpers ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /opt/slave_Machine2/workspace/Freestyle/GitHub_Maven/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ dumpers ---
+[INFO] No sources to compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.127s
+[INFO] Finished at: Mon Oct 04 21:50:09 UTC 2021
+[INFO] Final Memory: 7M/18M
+[INFO] ------------------------------------------------------------------------
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

@@ -1,0 +1,12 @@
+Started by user [8mha:////4N91J/9+wXSU0Nbtt15JJfGsjAJkwUyU1Npjqlp0kB1oAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/workspace/Freestyle/Echo_Shell_Commands
+[Echo_Shell_Commands] $ /bin/sh -xe /opt/jenkins/temp/jenkins4021925488233258000.sh
++ echo testing shell
+testing shell
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

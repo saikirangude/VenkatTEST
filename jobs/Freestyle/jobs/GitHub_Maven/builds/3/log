@@ -1,0 +1,57 @@
+Started by user [8mha:////4N91J/9+wXSU0Nbtt15JJfGsjAJkwUyU1Npjqlp0kB1oAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Rebuilds build #[8mha:////4JAst0WkJEldWJG3+gp+aYIpQNncmHTMUs4JqdgvkgIXAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkX9rPwkfbei1NTiksqcVDDPPbPEozQp3jexLDVP3wgAdYgIV9YAAAA=[0m2
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4HXhNTbzbSchtTZ77+2alOMiPqbG3H94WG4EmscGlD6bAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZZ/eT83ILSktQi/YCi/JR4r9S87My84vjgnMSyVCMAUUaN2tIAAAA=[0mProd_Jenkins_Slave2 (Prod_Slaves) in workspace /opt/slave_Machine2/workspace/Freestyle/GitHub_Maven
+The recommended git tool is: NONE
+No credentials specified
+ > /usr/bin/git rev-parse --resolve-git-dir /opt/slave_Machine2/workspace/Freestyle/GitHub_Maven/.git # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/saikirangude/Git-repo2.git # timeout=10
+Fetching upstream changes from https://github.com/saikirangude/Git-repo2.git
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.32.0'
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/saikirangude/Git-repo2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 5beee671a8a7d3ce0c81d1d5aab75ab3a1be7f45 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 5beee671a8a7d3ce0c81d1d5aab75ab3a1be7f45 # timeout=10
+Commit message: "Update pom.xml"
+ > /usr/bin/git rev-list --no-walk 5beee671a8a7d3ce0c81d1d5aab75ab3a1be7f45 # timeout=10
+[GitHub_Maven] $ /bin/sh -xe /tmp/jenkins4487027570432813592.sh
++ mvn clean sonar:sonar
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building trucks Maven Webapp 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ dumpers ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building trucks Maven Webapp 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.9.0.2155:sonar (default-cli) @ dumpers ---
+[INFO] User cache: /home/ec2-user/.sonar/cache
+[ERROR] SonarQube server [http://localhost:9000] can not be reached
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.676s
+[INFO] Finished at: Mon Oct 04 21:47:50 UTC 2021
+[INFO] Final Memory: 10M/24M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar (default-cli) on project dumpers: Unable to execute SonarScanner analysis: Fail to get bootstrap index from server: Failed to connect to localhost/127.0.0.1:9000: Connection refused (Connection refused) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Execute shell' marked build as failure
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

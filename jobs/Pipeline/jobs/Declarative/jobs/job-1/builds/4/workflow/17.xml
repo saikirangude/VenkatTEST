@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.94">
+    <parentIds>
+      <string>16</string>
+    </parentIds>
+    <id>17</id>
+    <descriptorId>hudson.plugins.emailext.EmailExtStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.94">
+      <arguments>
+        <entry>
+          <string>replyTo</string>
+          <string>devopspvr@gmail.com</string>
+        </entry>
+        <entry>
+          <string>to</string>
+          <string>devopspvr@gmail.com,vreddy063@gmail.com</string>
+        </entry>
+        <entry>
+          <string>body</string>
+          <string>Pipeline Build is over .. Build # is ..4 and Build status is.. SUCCESS.</string>
+        </entry>
+        <entry>
+          <string>subject</string>
+          <string>Pipeline Build is over .. Build # is ..4 and Build status is.. SUCCESS.</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.46">
+      <startTime>1633710174514</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

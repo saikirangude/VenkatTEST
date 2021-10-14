@@ -1,0 +1,27 @@
+Started by user [8mha:////4N91J/9+wXSU0Nbtt15JJfGsjAJkwUyU1Npjqlp0kB1oAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /root/.jenkins/workspace/Freestyle/Cloning_Code_From_GitHub
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/saikirangude/Git-repo2.git
+ > git init /root/.jenkins/workspace/Freestyle/Cloning_Code_From_GitHub # timeout=10
+Fetching upstream changes from https://github.com/saikirangude/Git-repo2.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.32.0'
+ > git fetch --tags --force --progress -- https://github.com/saikirangude/Git-repo2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/saikirangude/Git-repo2.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 5beee671a8a7d3ce0c81d1d5aab75ab3a1be7f45 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5beee671a8a7d3ce0c81d1d5aab75ab3a1be7f45 # timeout=10
+Commit message: "Update pom.xml"
+First time build. Skipping changelog.
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

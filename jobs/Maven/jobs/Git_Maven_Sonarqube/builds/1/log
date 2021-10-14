@@ -1,0 +1,26 @@
+Started by user [8mha:////4N91J/9+wXSU0Nbtt15JJfGsjAJkwUyU1Npjqlp0kB1oAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4HXhNTbzbSchtTZ77+2alOMiPqbG3H94WG4EmscGlD6bAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZZ/eT83ILSktQi/YCi/JR4r9S87My84vjgnMSyVCMAUUaN2tIAAAA=[0mProd_Jenkins_Slave2 (Prod_Slaves) in workspace /opt/slave_Machine2/workspace/Maven/Git_Maven_Sonarqube
+FATAL: Git repository URL 1 is an empty string in job definition. Checkout requires a valid repository URL
+java.lang.IllegalArgumentException: Git repository URL 1 is an empty string in job definition. Checkout requires a valid repository URL
+	at hudson.plugins.git.GitSCM.buildEnvironment(GitSCM.java:1540)
+	at hudson.plugins.git.GitSCM.buildEnvVars(GitSCM.java:1485)
+	at hudson.model.AbstractBuild.getEnvironment(AbstractBuild.java:955)
+	at hudson.maven.AbstractMavenBuild.getEnvironment(AbstractMavenBuild.java:57)
+	at hudson.maven.MavenModuleSetBuild.getEnvironment(MavenModuleSetBuild.java:168)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1293)
+	at hudson.scm.SCM.checkout(SCM.java:505)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1213)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:639)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:511)
+	at hudson.model.Run.execute(Run.java:1889)
+	at hudson.maven.MavenModuleSetBuild.run(MavenModuleSetBuild.java:543)
+	at hudson.model.ResourceController.execute(ResourceController.java:100)
+	at hudson.model.Executor.run(Executor.java:433)
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

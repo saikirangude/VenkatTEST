@@ -1,0 +1,64 @@
+Started by user [8mha:////4N91J/9+wXSU0Nbtt15JJfGsjAJkwUyU1Npjqlp0kB1oAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Unpacking https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.8.2/apache-maven-3.8.2-bin.zip to /opt/slave_Machine2/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.8.2 on Prod_Jenkins_Slave2
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4HXhNTbzbSchtTZ77+2alOMiPqbG3H94WG4EmscGlD6bAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZZ/eT83ILSktQi/YCi/JR4r9S87My84vjgnMSyVCMAUUaN2tIAAAA=[0mProd_Jenkins_Slave2 (Prod_Slaves) in workspace /opt/slave_Machine2/workspace/Maven/Git_Maven_Sonarqube
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/saikirangude/Git-repo2.git
+ > /usr/bin/git init /opt/slave_Machine2/workspace/Maven/Git_Maven_Sonarqube # timeout=10
+Fetching upstream changes from https://github.com/saikirangude/Git-repo2.git
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.32.0'
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/saikirangude/Git-repo2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url https://github.com/saikirangude/Git-repo2.git # timeout=10
+ > /usr/bin/git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 5beee671a8a7d3ce0c81d1d5aab75ab3a1be7f45 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 5beee671a8a7d3ce0c81d1d5aab75ab3a1be7f45 # timeout=10
+Commit message: "Update pom.xml"
+First time build. Skipping changelog.
+Unpacking https://repo1.maven.org/maven2/org/sonarsource/scanner/cli/sonar-scanner-cli/4.6.2.2472/sonar-scanner-cli-4.6.2.2472.zip to /opt/slave_Machine2/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner on Prod_Jenkins_Slave2
+[Git_Maven_Sonarqube] $ /opt/slave_Machine2/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/bin/sonar-scanner -Dsonar.host.url=http://18.219.226.94:9000/ ******** -Dsonar.projectKey=DOP2 -Dsonar.projectName=DevOps_Project_2 -Dsonar.host.url=http://18.219.226.94:9000/ -Dsonar.sources=src/main/java -Dsonar.projectBaseDir=/opt/slave_Machine2/workspace/Maven/Git_Maven_Sonarqube
+WARN: Property 'sonar.host.url' with value 'http://18.219.226.94:9000/' is overridden with value 'http://18.219.226.94:9000/'
+INFO: Scanner configuration file: /opt/slave_Machine2/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/conf/sonar-scanner.properties
+INFO: Project root configuration file: NONE
+INFO: SonarScanner 4.6.2.2472
+INFO: Java 9.0.4 Oracle Corporation (64-bit)
+INFO: Linux 4.14.243-185.433.amzn2.x86_64 amd64
+INFO: User cache: /home/ec2-user/.sonar/cache
+INFO: Scanner configuration file: /opt/slave_Machine2/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Scanner/conf/sonar-scanner.properties
+INFO: Project root configuration file: NONE
+INFO: Analyzing on SonarQube server 7.8.0
+INFO: Default locale: "en_US", source code encoding: "UTF-8" (analysis is platform dependent)
+WARN: SonarQube scanners will require Java 11+ starting on next version
+INFO: Load global settings
+INFO: Load global settings (done) | time=110ms
+INFO: Server id: BF41A1F2-AXwthJsStBxBS5HeR8hf
+INFO: User cache: /home/ec2-user/.sonar/cache
+INFO: Load/download plugins
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=88ms
+INFO: Load/download plugins (done) | time=1976ms
+INFO: Process project properties
+ERROR: Invalid value of sonar.sources for DOP2
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION FAILURE
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 5.249s
+INFO: Final Memory: 7M/33M
+INFO: ------------------------------------------------------------------------
+ERROR: Error during SonarScanner execution
+ERROR: The folder 'src/main/java' does not exist for 'DOP2' (base directory = /opt/slave_Machine2/workspace/Maven/Git_Maven_Sonarqube)
+ERROR: 
+ERROR: Re-run SonarScanner using the -X switch to enable full debug logging.
+WARN: Unable to locate 'report-task.txt' in the workspace. Did the SonarScanner succeed?
+ERROR: SonarQube scanner exited with non-zero code: 2
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE
